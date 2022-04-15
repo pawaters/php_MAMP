@@ -23,6 +23,7 @@
             mkdir(dirname($pwd_file), 0777, true);
             create_user($u_db, $login, $pwd, $pwd_file);
             echo "OK\n";
+            header("Location: index.html");
             return ;
         }
         else
@@ -40,6 +41,7 @@
                 }
                 create_user($u_db, $login, $pwd, $pwd_file);
                 echo "OK\n";
+                header("Location: index.html");
                 return ;
             }
         }
