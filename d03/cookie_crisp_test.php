@@ -21,3 +21,5 @@
         echo "expires :" . $_GET["expires"] . "\n";
     }
 ?>
+
+//how to get data with _COOKIE_expires
